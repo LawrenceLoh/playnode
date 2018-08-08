@@ -1,0 +1,18 @@
+// var fs = require("fs");
+
+// var data = fs.readFileSync('input.txt');
+
+// console.log(data.toString());
+// console.log("Program Ended");
+
+
+var fs = require("fs");
+
+var law = function (err, data) {
+    if (err) return console.error(err);
+    console.log(data.toString());
+ };
+
+fs.readFile('input.txt', law);
+
+console.log("Program Ended"); 
